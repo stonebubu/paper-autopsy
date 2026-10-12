@@ -1,16 +1,16 @@
 # 🧟 Paper Autopsy
 
-<h2 align="center">Don't read papers, autopsy them.</h2>
+<h3 align="center">Don't read papers, autopsy them.</h3>
 
 <p align="center"><a href="README.md">中文</a> | English</p>
 
-Most papers are weak. The strongest minority still carry packaging. In the age of AI, packaging has become a low-cost, learn-it-or-die research skill — a good story, polished figures, and trendy keywords often persuade harder than the actual result.
+**Most papers are weak.** The strongest minority still carry packaging. In the age of AI, packaging has become a low-cost, learn-it-or-die research skill — a good story, polished figures, and trendy keywords often persuade harder than the actual result.
 
-And seeing through packaging is tuition every researcher pays, in a course no one has ever formally taught. Newcomers take abstracts and conclusions at face value, get carried by polished figures, mistake redefined problems for field-level difficulties, and spend years in quiet self-doubt — *"why does everyone cite this? I can't see what's so good about it"* — before the instinct to ask *"where's the evidence?"* finally grows in. The tuition is measured in years, and at the end you get no lecture notes.
+And **seeing through packaging** is tuition every researcher pays, in a course no one has ever formally taught. Newcomers take abstracts and conclusions at face value, get carried by polished figures, mistake redefined problems for field-level difficulties, and spend years in quiet self-doubt — *"why does everyone cite this? I can't see what's so good about it"* — before the instinct to ask *"where's the evidence?"* finally grows in. The tuition is measured in years, and at the end you get no lecture notes.
 
 Paper Autopsy is an attempt to write those lecture notes: to turn the judgment of an experienced reader into an agent skill anyone can install on day one. Veterans use it to save time on routine dissections. Newcomers arguably benefit more — every verdict report is a demonstration of *how a suspicious reader actually reads*, and if you read enough of them, that voice becomes your own.
 
-Paper Autopsy is a [Claude Code](https://claude.com/claude-code) / [agent-skills](https://github.com/anthropics/skills) skill. In one sentence: it makes your agent read a paper with suspicion as the default stance, and hand you a graded autopsy report — what the paper is after the packaging comes off, not what it wants you to believe.
+Paper Autopsy is a [Claude Code](https://claude.com/claude-code) / [agent-skills](https://github.com/anthropics/skills) skill. In one sentence: it makes your agent read a paper with suspicion as the default stance, and hand you a graded autopsy report — **what the paper is after the packaging comes off, not what it wants you to believe.**
 
 **Not an interpreter. A prosecutor.** Interpreters assume the paper deserves to be understood; the prosecutor demands evidence — same paper, two questions: *"what does it say?" or "what does it actually show — and what does it merely claim?"*
 
