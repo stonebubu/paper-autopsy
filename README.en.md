@@ -1,8 +1,8 @@
 # 🧟 Paper Autopsy
 
-**Don't read papers. Autopsy them.**
+<p align="center"><b>Don't read papers. Autopsy them.</b></p>
 
-[中文](README.md) | English
+<p align="center"><a href="README.md">中文</a> | English</p>
 
 Most papers are weak. The strongest minority still carry packaging. In the age of AI, packaging has become a low-cost, learn-it-or-die research skill — a good story, polished figures, and trendy keywords often persuade harder than the actual result.
 
@@ -12,18 +12,7 @@ Paper Autopsy is an attempt to write those lecture notes: to turn the judgment o
 
 Paper Autopsy is a [Claude Code](https://claude.com/claude-code) / [agent-skills](https://github.com/anthropics/skills) skill. In one sentence: it makes your agent read a paper with suspicion as the default stance, and hand you a graded autopsy report — what the paper is after the packaging comes off, not what it wants you to believe.
 
-## Most paper tools are interpreters. This one is a prosecutor.
-
-| | Interpreter tools | Paper Autopsy |
-|---|---|---|
-| Default stance | "This paper is worth reading" | "This paper must prove itself" |
-| Output | A beautiful retelling of abstract → method → results | A verdict on what was actually demonstrated |
-| Failure mode | Faithfully amplifying the packaging | Still real: hallucinated citations, misjudging baseline strength, being carried by prose quality — this skill's mitigation is mandatory evidence anchoring (unanchorable judgments get downgraded), but mitigation is not immunity |
-| Grades | — | S / A / B / C / D, anchored, no hedging |
-
-Interpreters assume the paper deserves to be understood; the prosecutor demands evidence. Same paper, two different questions: not *"what does it say?"* but *"what does it actually show — and what does it merely claim?"*
-
-By this skill's own standards, "most paper tools are interpreters" is a qualitative claim and needs sourcing: we surveyed the paper-related skills on GitHub (literature search, long-form retelling, figure/deck/video generation) and found none whose default stance is suspicion and whose analytic core is motive. That is an observation as of writing, not a theorem — if you know a counterexample, open an issue; we would genuinely enjoy being falsified.
+**Not an interpreter. A prosecutor.** Interpreters assume the paper deserves to be understood; the prosecutor demands evidence — same paper, two questions: *"what does it say?" or "what does it actually show — and what does it merely claim?"*
 
 ## What it does
 
@@ -77,7 +66,7 @@ Every judgment must be anchored to a specific location in the paper (quoted phra
 Copy the repo folder into your agent's skills directory:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/paper-autopsy.git
+git clone https://github.com/stonebubu/paper-autopsy.git
 mkdir -p ~/.agents/skills
 cp -r paper-autopsy ~/.agents/skills/paper-autopsy
 ```
