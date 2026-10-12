@@ -1,6 +1,6 @@
 # 🧟 Paper Autopsy
 
-<p align="center"><b>不要读论文。验尸它。</b></p>
+<h2 align="center">不要读论文，验尸它。</h2>
 
 <p align="center"><a href="README.en.md">English</a> | 中文</p>
 

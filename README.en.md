@@ -1,6 +1,6 @@
 # 🧟 Paper Autopsy
 
-<p align="center"><b>Don't read papers. Autopsy them.</b></p>
+<h2 align="center">Don't read papers, autopsy them.</h2>
 
 <p align="center"><a href="README.md">中文</a> | English</p>
 
