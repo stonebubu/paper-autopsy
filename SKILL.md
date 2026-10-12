@@ -1,6 +1,10 @@
 ---
 name: paper-autopsy
 description: 深度拆解一篇论文，洞穿其包装，直抵内核。Use whenever the user provides a paper (PDF file, arXiv link, or title) and wants it read, analyzed, 拆解, 精读, 解读, or 评价 — even casually ("帮我看看这篇", "这篇怎么样", "读一下这个 arXiv"). Runs the full autopsy pipeline every time; no shallow summary mode. Designed with empirical ML/AI papers as the primary case, but works for any empirical research paper.
+license: MIT
+metadata:
+  author: stonebubu
+  version: "1.0"
 ---
 
 # Paper Autopsy：洞穿一篇论文
