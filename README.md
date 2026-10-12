@@ -63,6 +63,14 @@ Paper Autopsy 想做的，就是把这份讲义写出来：把一个有经验的
 
 ## 安装
 
+**方式一：skills.sh CLI（推荐）**
+
+```bash
+npx skills add stonebubu/paper-autopsy
+```
+
+**方式二：手动复制**
+
 把仓库文件夹复制进你的 agent 技能目录：
 
 ```bash

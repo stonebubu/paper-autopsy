@@ -63,6 +63,14 @@ Every judgment must be anchored to a specific location in the paper (quoted phra
 
 ## Install
 
+**Option 1: skills.sh CLI (recommended)**
+
+```bash
+npx skills add stonebubu/paper-autopsy
+```
+
+**Option 2: manual copy**
+
 Copy the repo folder into your agent's skills directory:
 
 ```bash
