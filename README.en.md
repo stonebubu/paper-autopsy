@@ -4,7 +4,7 @@
 
 <p align="center"><a href="README.md">中文</a> | English</p>
 
-**Most papers are weak, held up almost entirely by their packaging**; the best of the rest still carry some. In the age of AI, packaging has become a low-cost, learn-it-or-die research skill — a good story, polished figures, and trendy keywords often persuade harder than the actual result.
+**Most papers are weak, held up almost entirely by their packaging**; the best of the rest still love to tell a story. In the age of AI, packaging has become a low-cost, learn-it-or-die research skill — a good story, polished figures, and trendy keywords often persuade harder than the actual result.
 
 And **seeing through packaging** is tuition every researcher pays, in a course no one has ever formally taught. Newcomers take abstracts and conclusions at face value, get carried by polished figures, mistake redefined problems for field-level difficulties, and spend years in quiet self-doubt — *"why does everyone cite this? I can't see what's so good about it"* — before the instinct to ask *"where's the evidence?"* finally grows in. The tuition is measured in years, and at the end you get no lecture notes.
 
