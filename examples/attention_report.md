@@ -1,4 +1,4 @@
-# 🧟 论文内核报告：Attention Is All You Need (arXiv 1706.03762v7, NIPS 2017)
+# 🍌 论文内核报告：Attention Is All You Need (arXiv 1706.03762v7, NIPS 2017)
 
 ## 🎯 评级
 

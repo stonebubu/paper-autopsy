@@ -1,6 +1,6 @@
-# 🧟 Paper Autopsy
+# 🍌 Peel the Paper
 
-<h3 align="center">Don't read papers, autopsy them.</h3>
+<h3 align="center">Don't read papers. Peel them.</h3>
 
 <p align="center"><a href="README.md">中文</a> | English</p>
 
@@ -8,9 +8,9 @@
 
 And **seeing through packaging** is tuition every researcher pays, in a course no one has ever formally taught. Newcomers take abstracts and conclusions at face value, get carried by polished figures, mistake redefined problems for field-level difficulties, and spend years in quiet self-doubt — *"why does everyone cite this? I can't see what's so good about it"* — before the instinct to ask *"where's the evidence?"* finally grows in. The tuition is measured in years, and at the end you get no lecture notes.
 
-Paper Autopsy is an attempt to write those lecture notes: to turn the judgment of an experienced reader into an agent skill anyone can install on day one. Veterans use it to save time on routine dissections. Newcomers arguably benefit more — every verdict report is a demonstration of *how a suspicious reader actually reads*, and if you read enough of them, that voice becomes your own.
+Peel the Paper is an attempt to write those lecture notes: to turn the judgment of an experienced reader into an agent skill anyone can install on day one. Veterans use it to save time on routine peels. Newcomers arguably benefit more — every verdict report is a demonstration of *how a suspicious reader actually reads*, and if you read enough of them, that voice becomes your own.
 
-Paper Autopsy is a [Claude Code](https://claude.com/claude-code) / [agent-skills](https://github.com/anthropics/skills) skill. In one sentence: it makes your agent read a paper with suspicion as the default stance, and hand you a graded autopsy report — **what the paper is after the packaging comes off, not what it wants you to believe.**
+Peel the Paper is a [Claude Code](https://claude.com/claude-code) / [agent-skills](https://github.com/anthropics/skills) skill. In one sentence: it makes your agent read a paper with suspicion as the default stance, and hand you a graded peel report — **what the paper is after the packaging comes off, not what it wants you to believe.**
 
 **Not an interpreter. A prosecutor.** Interpreters assume the paper deserves to be understood; the prosecutor demands evidence — same paper, two questions: *"what does it say?" or "what does it actually show — and what does it merely claim?"*
 
@@ -27,7 +27,7 @@ No configuration: copy it into your skills directory and talk to your agent norm
 
 ## The dual-motive framework
 
-Contribution tells you what a paper did. **Motive tells you what's real.** Autopsy centers on two motives:
+Contribution tells you what a paper did. **Motive tells you what's real.** Peel centers on two motives:
 
 **1. The motive of necessity — the researcher's territory 🌍**
 The genuine pain point of a field. Is it a long-acknowledged difficulty that other works independently grapple with — or a narrative manufactured to fit the method? A field's real bottleneck, or a technical gap of "nobody happened to do it this way"? The territory shows you the field the researcher actually stands on — and whether it truly hurts there.
@@ -53,11 +53,11 @@ The overall grade is **not** an average — it answers one question: *after stri
 
 ## The verdict report
 
-Every run ends in a structured autopsy report — grades up front, then the paper's self-claims, the territory, the mind, a proven/suggested/packaging verdict, and a researcher portrait:
+Every run ends in a structured peel report — grades up front, then the paper's self-claims, the territory, the mind, a proven/suggested/packaging verdict, and a researcher portrait:
 
 > *"This researcher holds ___ as territory, working with a ___ mind. That — not this one paper — decides whether you should read their next one."*
 
-Every judgment must be anchored to a specific location in the paper (quoted phrase + section/figure). Unsourced qualitative judgments are downgraded to "suspected" — an autopsy that runs on vibes would be just another kind of packaging.
+Every judgment must be anchored to a specific location in the paper (quoted phrase + section/figure). Unsourced qualitative judgments are downgraded to "suspected" — a peel that runs on vibes would be just another kind of packaging.
 
 **What does the output actually look like?** See [examples/attention_report.md](examples/attention_report.md) — a full verdict report on *Attention Is All You Need* (real skill output; the analyzed paper's PDF sits in the same folder, so you can verify every claim against the source). The only way to judge a pure-prompt product is its output; this is our answer sheet.
 
@@ -66,7 +66,7 @@ Every judgment must be anchored to a specific location in the paper (quoted phra
 **Option 1: skills.sh CLI (recommended)**
 
 ```bash
-npx skills add stonebubu/paper-autopsy
+npx skills add stonebubu/peel-the-paper
 ```
 
 **Option 2: manual copy**
@@ -74,9 +74,9 @@ npx skills add stonebubu/paper-autopsy
 Copy the repo folder into your agent's skills directory:
 
 ```bash
-git clone https://github.com/stonebubu/paper-autopsy.git
+git clone https://github.com/stonebubu/peel-the-paper.git
 mkdir -p ~/.agents/skills
-cp -r paper-autopsy ~/.agents/skills/paper-autopsy
+cp -r peel-the-paper ~/.agents/skills/peel-the-paper
 ```
 
 Other agents: copy the folder into their skills directory — Claude Code uses `~/.claude/skills/`, ZCode uses `~/.zcode/skills/` (which takes priority over `~/.agents/skills/`), and project-level installs go into the corresponding project directory.
@@ -96,7 +96,7 @@ The skill body is written in Chinese but works fully in English contexts: it tri
 A strong checklist requires having autopsied many papers. This skill deliberately encodes *judgment* (the dual-motive framework, the grading anchors) instead of *enumeration* — judgment generalizes to packaging shapes it has never seen; checklists only catch the known ones.
 
 **Who are you to grade someone's paper?**
-The grades are not a tribunal for authors — they are a decision tool for readers: they compress an autopsy into an actionable "should *I* spend my weekend on this." Every grade is anchored to published criteria and to specific evidence in the paper; disagree with the evidence, not the vibe.
+The grades are not a tribunal for authors — they are a decision tool for readers: they compress a full peel into an actionable "should *I* spend my weekend on this." Every grade is anchored to published criteria and to specific evidence in the paper; disagree with the evidence, not the vibe.
 
 **Does it only work on ML/AI papers?**
 It was designed with empirical ML/AI papers as the primary case. The pipeline is domain-agnostic; for theory papers, swap "experimental evidence" for "soundness of proofs and reasonableness of assumptions."

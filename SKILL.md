@@ -1,13 +1,13 @@
 ---
-name: paper-autopsy
-description: 深度拆解一篇论文，洞穿其包装，直抵内核。Use whenever the user provides a paper (PDF file, arXiv link, or title) and wants it read, analyzed, 拆解, 精读, 解读, or 评价 — even casually ("帮我看看这篇", "这篇怎么样", "读一下这个 arXiv"). Runs the full autopsy pipeline every time; no shallow summary mode. Designed with empirical ML/AI papers as the primary case, but works for any empirical research paper.
+name: peel-the-paper
+description: 深度拆解一篇论文，洞穿其包装，直抵内核。Use whenever the user provides a paper (PDF file, arXiv link, or title) and wants it read, analyzed, 拆解, 精读, 解读, or 评价 — even casually ("帮我看看这篇", "这篇怎么样", "读一下这个 arXiv"). Runs the full pipeline every time; no shallow summary mode. Designed with empirical ML/AI papers as the primary case, but works for any empirical research paper.
 license: MIT
 metadata:
   author: stonebubu
   version: "1.0"
 ---
 
-# Paper Autopsy：洞穿一篇论文
+# Peel the Paper：撕开一篇论文
 
 ## 哲学（先读懂这个，再动手）
 
@@ -148,7 +148,7 @@ LLM 天然回避冲突、默认礼貌，这会让评级系统性向中间漂移�
 用用户当前使用的语言输出（用户说中文就全中文，说英文就全英文），结构如下。每个判断必须挂在论文中的具体证据上（引用原文短语并注明章节/图表），不允许出现无出处的定性。做不到这一点就降级措辞（"疑似""证据不足"）。
 
 ```markdown
-# 🧟 论文内核报告：<标题>
+# 🍌 论文内核报告：<标题>
 
 ## 🎯 评级
 | 领地 | 思想 | 证据 | 综合 |
