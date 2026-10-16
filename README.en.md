@@ -12,14 +12,14 @@ Peel the Paper is an attempt to write those lecture notes: to turn the judgment 
 
 Peel the Paper is a [Claude Code](https://claude.com/claude-code) / [agent-skills](https://github.com/anthropics/skills) skill. In one sentence: it makes your agent read a paper with suspicion as the default stance, and hand you a graded peel report — **what the paper is after the packaging comes off, not what it wants you to believe.**
 
-**Not an interpreter. A prosecutor.** Interpreters assume the paper deserves to be understood; the prosecutor demands evidence — same paper, two questions: *"what does it say?" or "what does it actually show — and what does it merely claim?"*
+**Not an interpreter — a peel.** Interpreters assume the paper deserves to be understood; the peel demands evidence — same paper, two questions: *"what does it say?" or "what does it actually show — and what does it merely claim?"*
 
 ## What it does
 
 Given a paper (PDF path, arXiv link, or title), the agent:
 
 1. **Reads the full text** — body, figures, appendix. The abstract is used only to record the author's self-claims, never as a basis for judgment;
-2. **Analyzes the two motives**: what the field genuinely aches from (necessity), and how the solution was actually conceived (possibility) — see the dual-motive framework below;
+2. **Analyzes the two motives**: the field's genuinely hardest problem (necessity), and how the solution was actually conceived (possibility) — see the dual-motive framework below;
 3. **Grades three dimensions** (Territory / Mind / Evidence, each S–D), then compresses them into one sentence of net contribution and an action recommendation (read closely / cite / skip);
 4. **Writes the verdict report**: every judgment anchored to a specific location in the paper; judgments that cannot be anchored get downgraded to "suspected."
 
@@ -30,7 +30,7 @@ No configuration: copy it into your skills directory and talk to your agent norm
 Contribution tells you what a paper did. **Motive tells you what's real.** Peel centers on two motives:
 
 **1. The motive of necessity — the researcher's territory 🌍**
-The genuine pain point of a field. Is it a long-acknowledged difficulty that other works independently grapple with — or a narrative manufactured to fit the method? A field's real bottleneck, or a technical gap of "nobody happened to do it this way"? The territory shows you the field the researcher actually stands on — and whether it truly hurts there.
+The genuine pain point of a field. Is it a long-acknowledged difficulty that other works independently grapple with — or a narrative manufactured to fit the method? A field's real bottleneck, or a technical gap of "nobody happened to do it this way"? The territory shows you the field the researcher actually stands on — and how much it matters there.
 
 **2. The motive of possibility — the researcher's mind 💡**
 How was this solution actually conceived? From an observation, a failure-mode diagnosis, an analogy from another field — or trial-and-error dressed up as insight? The test: for every non-trivial design decision, does the paper give a *why* (defensible, falsifiable) or only a *what* ("we adopt...")? Ablations are the window here: do they test the core idea, or perform theater on trivia?
@@ -53,7 +53,7 @@ The overall grade is **not** an average — it answers one question: *after stri
 
 ## The verdict report
 
-Every run ends in a structured peel report — grades up front, then the paper's self-claims, the territory, the mind, a proven/suggested/packaging verdict, and a researcher portrait:
+Every run ends in a structured core report — grades up front, then the territory, the mind, the paper's self-claims (deliberately placed after the audit, so the gap reveals itself), the evidence audit, and a researcher portrait:
 
 > *"This researcher holds ___ as territory, working with a ___ mind. That — not this one paper — decides whether you should read their next one."*
 
@@ -93,7 +93,7 @@ The skill body is written in Chinese but works fully in English contexts: it tri
 ## FAQ
 
 **Why no checklist of "10 packaging tricks to watch for"?**
-A strong checklist requires having autopsied many papers. This skill deliberately encodes *judgment* (the dual-motive framework, the grading anchors) instead of *enumeration* — judgment generalizes to packaging shapes it has never seen; checklists only catch the known ones.
+A strong checklist requires having peeled many papers. This skill deliberately encodes *judgment* (the dual-motive framework, the grading anchors) instead of *enumeration* — judgment generalizes to packaging shapes it has never seen; checklists only catch the known ones.
 
 **Who are you to grade someone's paper?**
 The grades are not a tribunal for authors — they are a decision tool for readers: they compress a full peel into an actionable "should *I* spend my weekend on this." Every grade is anchored to published criteria and to specific evidence in the paper; disagree with the evidence, not the vibe.
