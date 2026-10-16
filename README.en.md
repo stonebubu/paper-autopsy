@@ -8,9 +8,9 @@
 
 And **seeing through packaging** is tuition every researcher pays, in a course no one has ever formally taught. Newcomers take abstracts and conclusions at face value, get carried by polished figures, mistake redefined problems for field-level difficulties, and spend years in quiet self-doubt — *"why does everyone cite this? I can't see what's so good about it"* — before the instinct to ask *"where's the evidence?"* finally grows in. The tuition is measured in years, and at the end you get no lecture notes.
 
-Peel the Paper is an attempt to write those lecture notes: to turn the judgment of an experienced reader into an agent skill anyone can install on day one. Veterans use it to save time on routine peels. Newcomers arguably benefit more — every verdict report is a demonstration of *how a suspicious reader actually reads*, and if you read enough of them, that voice becomes your own.
+Peel the Paper is an attempt to write those lecture notes: to turn the judgment of an experienced reader into an agent skill anyone can install on day one. Veterans use it to save time on routine peels. Newcomers arguably benefit more — every core report is a demonstration of *how a suspicious reader actually reads*, and if you read enough of them, that voice becomes your own.
 
-Peel the Paper is a [Claude Code](https://claude.com/claude-code) / [agent-skills](https://github.com/anthropics/skills) skill. In one sentence: it makes your agent read a paper with suspicion as the default stance, and hand you a graded peel report — **what the paper is after the packaging comes off, not what it wants you to believe.**
+Peel the Paper is a [Claude Code](https://claude.com/claude-code) / [agent-skills](https://github.com/anthropics/skills) skill. In one sentence: it makes your agent read a paper with suspicion as the default stance, and hand you a graded core report — **what the paper is after the packaging comes off, not what it wants you to believe.**
 
 **Not an interpreter — a peel.** Interpreters assume the paper deserves to be understood; the peel demands evidence — same paper, two questions: *"what does it say?" or "what does it actually show — and what does it merely claim?"*
 
@@ -21,7 +21,7 @@ Given a paper (PDF path, arXiv link, or title), the agent:
 1. **Reads the full text** — body, figures, appendix. The abstract is used only to record the author's self-claims, never as a basis for judgment;
 2. **Analyzes the two motives**: the field's genuinely hardest problem (necessity), and how the solution was actually conceived (possibility) — see the dual-motive framework below;
 3. **Grades three dimensions** (Territory / Mind / Evidence, each S–D), then compresses them into one sentence of net contribution and an action recommendation (read closely / cite / skip);
-4. **Writes the verdict report**: every judgment anchored to a specific location in the paper; judgments that cannot be anchored get downgraded to "suspected."
+4. **Writes the core report**: every judgment anchored to a specific location in the paper; judgments that cannot be anchored get downgraded to "suspected."
 
 No configuration: copy it into your skills directory and talk to your agent normally.
 
@@ -51,7 +51,7 @@ The overall grade is **not** an average — it answers one question: *after stri
 
 **And the tone follows the grade.** Truly good papers get explicit, specific praise — stinginess with admiration for great work is as much a failure as stinginess with criticism for bad work. Weak papers get blunt, evidence-anchored takedowns.
 
-## The verdict report
+## The core report
 
 Every run ends in a structured core report — grades up front, then the territory, the mind, the paper's self-claims (deliberately placed after the audit, so the gap reveals itself), the evidence audit, and a researcher portrait:
 
@@ -59,7 +59,7 @@ Every run ends in a structured core report — grades up front, then the territo
 
 Every judgment must be anchored to a specific location in the paper (quoted phrase + section/figure). Unsourced qualitative judgments are downgraded to "suspected" — a peel that runs on vibes would be just another kind of packaging.
 
-**What does the output actually look like?** See [examples/attention_report.md](examples/attention_report.md) — a full verdict report on *Attention Is All You Need* (real skill output; the analyzed paper's PDF sits in the same folder, so you can verify every claim against the source). The only way to judge a pure-prompt product is its output; this is our answer sheet.
+**What does the output actually look like?** See [examples/attention_report.md](examples/attention_report.md) — a full core report on *Attention Is All You Need* (real skill output; the analyzed paper's PDF sits in the same folder, so you can verify every claim against the source). The only way to judge a pure-prompt product is its output; this is our answer sheet.
 
 ## Install
 
